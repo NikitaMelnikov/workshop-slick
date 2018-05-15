@@ -36,6 +36,8 @@ trait ApplicationProtocol {
 
   implicit val getChannelResponseJsonWriter: JsonWriter[GetChannelResponse] = jsonWriter[GetChannelResponse]
 
+  implicit val closeChannelResponseJsonWriter: JsonWriter[CloseChannelResponse] = jsonWriter[CloseChannelResponse]
+
   implicit val joinChannelRequestJsonReader: JsonReader[JoinChannelRequest] = jsonReader[JoinChannelRequest]
   implicit val joinChannelResponseJsonWriter: JsonWriter[JoinChannelResponse] = jsonWriter[JoinChannelResponse]
 
